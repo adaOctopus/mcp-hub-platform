@@ -10,11 +10,11 @@ export default function Hero() {
             {/* <div className="inline-block rounded-full bg-muted px-3 py-1 text-sm">
               <span className="text-primary font-medium">Model Context Protocol</span>
             </div> */}
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
-              <span className="gradient-text">Supercharge</span> your apps with AI Agents.
+            <h1 className="text-4xl md:text-6xl font-bold tracking-tighter" >
+              <span className="gradient-text" >Supercharge</span> your apps with AI Agents.
             </h1>
             <p className="text-xl text-muted-foreground">
-              The easiest way to integrate & monetize MCP servers without writing any code. Connect your apps to any AI Agent incredibly fast.
+            Instantly connect your apps to any AI Agent. The easiest way to add AI to your apps & monetize MCP servers without writing any code. 
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -23,7 +23,7 @@ export default function Hero() {
                 href="#register"
                 className="inline-flex items-center justify-center h-11 rounded-md px-8 text-sm font-medium text-white bg-primary hover:bg-primary/90 transition-colors"
               >
-                Get Early Access
+                GET EARLY ACCESS
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -46,7 +46,7 @@ export default function Hero() {
                 href="#why"
                 className="inline-flex items-center justify-center h-11 rounded-md px-8 text-sm font-medium bg-muted text-muted-foreground hover:bg-muted/80 transition-colors"
               >
-                Learn More
+                LEARN MORE
               </Link>
             </div>
           </div>

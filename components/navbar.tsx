@@ -54,9 +54,9 @@ export default function Navbar() {
           <Link href="#who" className="hover:text-primary transition-colors">
             Who is it for
           </Link>
-          <Link href="#register" className="hover:text-primary transition-colors">
+          {/* <Link href="#register" className="hover:text-primary transition-colors">
             Register
-          </Link>
+          </Link> */}
           <Button
             variant="ghost"
             size="icon"

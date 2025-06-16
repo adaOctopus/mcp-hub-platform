@@ -92,3 +92,21 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+h1 {
+  letter-spacing: -1px;
+}
+h2, h3 {
+  letter-spacing: -1px;
+}
+@media (min-width: 640px) {
+  h1 {
+    letter-spacing: -1px;
+  }
+  h2 {
+    letter-spacing: -3px;
+  }
+  h3 {
+    letter-spacing: -1px;
+  }
+}

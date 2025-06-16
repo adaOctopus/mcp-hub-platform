@@ -13,6 +13,17 @@ export default function WhyUseSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <Card>
+            <CardHeader className="pb-2">
+              <Cpu className="h-6 w-6 text-primary mb-2" />
+              <CardTitle>Superpowers</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                Easily add AI to your apps and scale your products without the hassle of running servers locally or coding yourself.
+              </CardDescription>
+            </CardContent>
+          </Card>
           <Card>
             <CardHeader className="pb-2">
               <Database className="h-6 w-6 text-primary mb-2" />
@@ -21,6 +32,18 @@ export default function WhyUseSection() {
             <CardContent>
               <CardDescription>
                 Connect once, access hundreds of tools. MCP standardizes how AI models interact with external systems.
+              </CardDescription>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader className="pb-2">
+              <Coins className="h-6 w-6 text-primary mb-2" />
+              <CardTitle>Monetization Ready</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <CardDescription>
+                Built-in infrastructure for developers to monetize their MCP servers and specialized tools.
               </CardDescription>
             </CardContent>
           </Card>
@@ -37,17 +60,7 @@ export default function WhyUseSection() {
             </CardContent>
           </Card>
 
-          <Card>
-            <CardHeader className="pb-2">
-              <Cpu className="h-6 w-6 text-primary mb-2" />
-              <CardTitle>Powerful Capabilities</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <CardDescription>
-                Extend AI capabilities with real-time data, specialized tools, and domain-specific functions.
-              </CardDescription>
-            </CardContent>
-          </Card>
+          
 
           <Card>
             <CardHeader className="pb-2">
@@ -61,17 +74,7 @@ export default function WhyUseSection() {
             </CardContent>
           </Card>
 
-          <Card>
-            <CardHeader className="pb-2">
-              <Coins className="h-6 w-6 text-primary mb-2" />
-              <CardTitle>Monetization Ready</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <CardDescription>
-                Built-in infrastructure for developers to monetize their MCP servers and specialized tools.
-              </CardDescription>
-            </CardContent>
-          </Card>
+          
 
           <Card>
             <CardHeader className="pb-2">
