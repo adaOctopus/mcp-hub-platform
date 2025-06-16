@@ -7,7 +7,7 @@ import { Play, Zap, CheckCircle, Bot, Upload, DollarSign } from "lucide-react"
 // Typing animation for search bar
 const SearchTypingAnimation = () => {
   const [typedText, setTypedText] = useState("")
-  const searchTerms = ["email", "weather", "database", "payment"]
+  const searchTerms = ["search for MCP servers"]
   const [currentTermIndex, setCurrentTermIndex] = useState(0)
   const [isTyping, setIsTyping] = useState(true)
 
@@ -140,7 +140,7 @@ const ClickAndPlayUI = () => {
             ) : (
               <>
                 <Play className="h-3 w-3" />
-                <span>Click & Play</span>
+                <span>Click</span>
               </>
             )}
           </button>
@@ -679,7 +679,7 @@ export default function VisualProcessSection() {
                           <input
                             type="text"
                             className="w-full h-8 px-3 pr-8 rounded border bg-background/50 text-sm"
-                            placeholder="Search MCP servers..."
+                            placeholder=""
                             readOnly
                           />
                           <SearchTypingAnimation />

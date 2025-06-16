@@ -11,7 +11,7 @@ export default function Footer() {
               <span className="gradient-text">MCP Hub</span>
             </div>
             <p className="text-muted-foreground max-w-xs">
-              The marketplace for Model Context Protocol servers. Connect, discover, and monetize AI capabilities.
+             Where digital empires are built.
             </p>
           </div>
 

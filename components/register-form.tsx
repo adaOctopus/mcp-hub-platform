@@ -44,7 +44,7 @@ export default function RegisterForm() {
       <div className="container px-4 md:px-6">
         <div className="max-w-md mx-auto bg-card rounded-xl border shadow-lg p-6 md:p-8">
           <div className="text-center mb-6">
-            <h2 className="text-2xl md:text-3xl font-bold mb-2">Register for Early Access</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-2">Get Early Access</h2>
             <p className="text-muted-foreground">Be the first to join our platform when we launch</p>
           </div>
 

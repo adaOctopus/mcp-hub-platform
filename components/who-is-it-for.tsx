@@ -5,7 +5,7 @@ export default function WhoIsItFor() {
     <section id="who" className="py-16 md:py-24">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-4 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Who Is MCP Hub For?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold" style={{letterSpacing: '-1px'}}> For <span className="gradient-text" >both</span> AI entrepreneurs & MCP Server Makers</h2>
           {/* <p className="text-xl text-muted-foreground max-w-2xl">
             Our platform serves two key audiences in the AI ecosystem
           </p> */}
