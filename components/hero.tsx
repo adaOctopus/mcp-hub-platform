@@ -68,7 +68,7 @@ export default function Hero() {
                       </div>
                       <div className="flex items-center gap-1.5">
                         <div className="w-2 h-2 rounded-full bg-secondary"></div>
-                        <span>AI Systems</span>
+                        <span>AI Agents</span>
                       </div>
                       <div className="flex items-center gap-1.5">
                         <div className="w-2 h-2 rounded-full bg-blue-500"></div>
@@ -79,7 +79,7 @@ export default function Hero() {
                 </div>
 
                 {/* Search bar overlay */}
-                <div className="absolute bottom-8 left-0 right-0 flex justify-center px-6">
+                {/* <div className="absolute bottom-8 left-0 right-0 flex justify-center px-6">
                   <div className="relative w-full max-w-md">
                     <input
                       type="text"
@@ -104,11 +104,11 @@ export default function Hero() {
                       </svg>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Stats overlay */}
                 <div className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full border flex items-center">
-                  <div className="w-2 h-2 rounded-full bg-primary mr-2"></div>
+                  <div className="w-2 h-2 rounded-full bg-blue-500 mr-2"></div>
                   <span className="text-sm font-medium">15,473 Indexed</span>
                 </div>
               </div>
@@ -117,16 +117,16 @@ export default function Hero() {
             {/* Feature highlights below the illustration */}
             <div className="grid grid-cols-3 gap-4 mt-6">
               <div className="flex flex-col items-center text-center p-3 rounded-lg border bg-card">
-                <div className="text-primary font-semibold mb-1">Develop</div>
-                <p className="text-xs text-muted-foreground">Create & monetize MCP servers</p>
+                <div className="text-primary font-semibold mb-1">Discover</div>
+                <p className="text-xs text-muted-foreground">Discover MCP servers</p>
               </div>
               <div className="flex flex-col items-center text-center p-3 rounded-lg border bg-card">
                 <div className="text-primary font-semibold mb-1">Connect</div>
                 <p className="text-xs text-muted-foreground">Instant AI integration</p>
               </div>
               <div className="flex flex-col items-center text-center p-3 rounded-lg border bg-card">
-                <div className="text-primary font-semibold mb-1">Scale</div>
-                <p className="text-xs text-muted-foreground">Grow your AI business</p>
+                <div className="text-primary font-semibold mb-1">Monetize</div>
+                <p className="text-xs text-muted-foreground">Your AI app or your MCP server</p>
               </div>
             </div>
           </div>
