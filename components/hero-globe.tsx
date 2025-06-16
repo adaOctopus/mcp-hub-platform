@@ -2,7 +2,7 @@
 
 import { useRef } from "react"
 import { Canvas, useFrame, useThree } from "@react-three/fiber"
-import { OrbitControls, Sphere, Html, Line } from "@react-three/drei"
+import { OrbitControls, Sphere, Line } from "@react-three/drei"
 import { useTheme } from "next-themes"
 import * as THREE from "three"
 
@@ -25,33 +25,6 @@ const ConnectionLine = ({
       transparent
       opacity={0.4}
     />
-  )
-}
-
-// Icon point with tiny icon
-const IconPoint = ({
-  position,
-  icon,
-  color,
-}: {
-  position: [number, number, number]
-  icon: string
-  color: string
-}) => {
-  return (
-    <mesh position={position}>
-      <sphereGeometry args={[0.015, 12, 12]} />
-      <meshBasicMaterial color={color} transparent opacity={0.8} />
-      <Html distanceFactor={25} position={[0, 0, 0]} transform>
-        <div className="flex items-center justify-center w-3 h-3 rounded-full">
-          <div
-            className="text-white"
-            style={{ fontSize: "6px", transform: "scale(0.5)" }}
-            dangerouslySetInnerHTML={{ __html: icon }}
-          />
-        </div>
-      </Html>
-    </mesh>
   )
 }
 
@@ -91,9 +64,9 @@ const Globe = ({ theme }: { theme: string }) => {
 
   // Colors based on theme
   const dotColor = theme === "dark" ? "#ffffff" : "#333333"
-  const primaryColor = "#8B5CF6" // Purple (primary)
-  const secondaryColor = "#10B981" // Green (secondary)
-  const accentColor = "#8B5CF6" // Purple accent
+  const primaryColor = "#8B5CF6" // Purple (primary) - Users
+  const secondaryColor = "#10B981" // Green (secondary) - AI Systems
+  const blueColor = "#3B82F6" // Blue - MCP Servers
 
   // Slow rotation animation
   useFrame(() => {
@@ -163,17 +136,10 @@ const Globe = ({ theme }: { theme: string }) => {
     { start: iconPositions.ai[2], end: iconPositions.servers[2], color: secondaryColor },
 
     // Server to User connections (completing the triangle)
-    { start: iconPositions.servers[0], end: iconPositions.users[2], color: accentColor },
-    { start: iconPositions.servers[1], end: iconPositions.users[0], color: accentColor },
-    { start: iconPositions.servers[2], end: iconPositions.users[1], color: accentColor },
+    { start: iconPositions.servers[0], end: iconPositions.users[2], color: blueColor },
+    { start: iconPositions.servers[1], end: iconPositions.users[0], color: blueColor },
+    { start: iconPositions.servers[2], end: iconPositions.users[1], color: blueColor },
   ]
-
-  // SVG icons as strings - simplified versions
-  const icons = {
-    user: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="8" r="5"></circle><path d="M20 21a8 8 0 1 0-16 0"></path></svg>`,
-    ai: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"></rect><rect x="2" y="14" width="20" height="8" rx="2"></rect><line x1="6" x2="6.01" y1="6" y2="6"></line><line x1="6" x2="6.01" y1="18" y2="18"></line></svg>`,
-    server: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 12V7H3v5h18z"></path><path d="M3 7v10a4 4 0 0 0 4 4h10a4 4 0 0 0 4-4V7"></path><line x1="7.5" y1="12" x2="7.51" y2="12"></line><line x1="12" y1="12" x2="12.01" y2="12"></line><line x1="16.5" y1="12" x2="16.51" y2="12"></line></svg>`,
-  }
 
   return (
     <group ref={globeRef}>
@@ -216,18 +182,18 @@ const Globe = ({ theme }: { theme: string }) => {
         </mesh>
       ))}
 
-      {/* Server points (purple) */}
+      {/* Server points (blue) */}
       {iconPositions.servers.map((position, i) => (
         <mesh key={`server-${i}`} position={position as [number, number, number]}>
           <sphereGeometry args={[0.015, 12, 12]} />
-          <meshBasicMaterial color={accentColor} />
+          <meshBasicMaterial color={blueColor} />
         </mesh>
       ))}
 
       {/* Pulse effects on key nodes */}
       <PulseEffect position={iconPositions.users[0] as [number, number, number]} color={primaryColor} />
       <PulseEffect position={iconPositions.ai[1] as [number, number, number]} color={secondaryColor} />
-      <PulseEffect position={iconPositions.servers[2] as [number, number, number]} color={accentColor} />
+      <PulseEffect position={iconPositions.servers[2] as [number, number, number]} color={blueColor} />
     </group>
   )
 }

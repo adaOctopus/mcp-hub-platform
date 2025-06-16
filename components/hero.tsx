@@ -6,16 +6,15 @@ export default function Hero() {
     <section className="pt-24 pb-16 md:pt-32 md:pb-24 overflow-hidden">
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="flex flex-col space-y-6">
+            <div className="flex flex-col space-y-6">
             {/* <div className="inline-block rounded-full bg-muted px-3 py-1 text-sm">
               <span className="text-primary font-medium">Model Context Protocol</span>
             </div> */}
             <h1 className="text-4xl md:text-6xl font-bold tracking-tighter">
-              Connect the world with <span className="gradient-text">MCP</span>
+              <span className="gradient-text">Supercharge</span> your apps with AI Agents.
             </h1>
             <p className="text-xl text-muted-foreground">
-              Find awesome MCP servers. Build AI agents quickly. Monetize your MCP servers or discover new capabilities
-              for your AI products.
+              The easiest way to integrate & monetize MCP servers without writing any code. Connect your apps to any AI Agent incredibly fast.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -57,7 +56,27 @@ export default function Hero() {
             <div className="relative w-full">
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 blur-3xl rounded-3xl -z-10"></div>
               <div className="bg-card/50 backdrop-blur-sm border rounded-xl shadow-lg overflow-hidden p-4">
-                <HeroGlobe />
+                <div className="relative">
+                  <HeroGlobe />
+
+                  {/* Legend overlay */}
+                  <div className="absolute top-2 left-2 bg-background/70 backdrop-blur-sm p-2 rounded-lg border border-border/50 shadow-sm">
+                    <div className="flex flex-col gap-1 text-xs">
+                      <div className="flex items-center gap-1.5">
+                        <div className="w-2 h-2 rounded-full bg-primary"></div>
+                        <span>Users</span>
+                      </div>
+                      <div className="flex items-center gap-1.5">
+                        <div className="w-2 h-2 rounded-full bg-secondary"></div>
+                        <span>AI Systems</span>
+                      </div>
+                      <div className="flex items-center gap-1.5">
+                        <div className="w-2 h-2 rounded-full bg-blue-500"></div>
+                        <span>MCP Servers</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
                 {/* Search bar overlay */}
                 <div className="absolute bottom-8 left-0 right-0 flex justify-center px-6">
