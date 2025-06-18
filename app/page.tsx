@@ -14,7 +14,7 @@ export default function Home() {
       <WhyUseSection />
       <WhoIsItFor />
       <ProblemSolutionTabs />
-      <VisualProcessSection />
+      {/* <VisualProcessSection /> */}
       <DigitalEmpiresSection />
       <RegisterForm />
       <Footer />

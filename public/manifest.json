@@ -1,0 +1,31 @@
+{
+    "name": "MCP Hub - AI Agent Integration Platform",
+    "short_name": "MCP Hub",
+    "description": "Turn your product into a money machine with AI Agents",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0f0f23",
+    "theme_color": "#8B5CF6",
+    "orientation": "portrait-primary",
+    "icons": [
+      {
+        "src": "/favicon.ico",
+        "sizes": "16x16 32x32",
+        "type": "image/x-icon"
+      },
+      {
+        "src": "/apple-touch-icon.png",
+        "sizes": "180x180",
+        "type": "image/png"
+      },
+      {
+        "src": "/favicon.svg",
+        "sizes": "any",
+        "type": "image/svg+xml"
+      }
+    ],
+    "categories": ["business", "productivity", "developer"],
+    "lang": "en",
+    "dir": "ltr"
+  }
+  
