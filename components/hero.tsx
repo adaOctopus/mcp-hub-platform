@@ -61,8 +61,8 @@ export default function Hero() {
 
                   {/* Legend overlay */}
                   <div className="absolute top-2 left-2 bg-background/70 backdrop-blur-sm p-2 rounded-lg border border-border/50 shadow-sm">
-                    <div className="flex flex-col gap-1 text-xs">
-                      <div className="flex items-center gap-1.5">
+                  <div className="flex flex-col gap-1 text-xs">
+                      <div className="flex items-center gap-1.5  mt-1">
                         <div className="w-2 h-2 rounded-full bg-primary"></div>
                         <span>Users</span>
                       </div>
@@ -75,6 +75,7 @@ export default function Hero() {
                         <span>MCP Servers</span>
                       </div>
                     </div>
+                  
                   </div>
                 </div>
 
@@ -109,7 +110,7 @@ export default function Hero() {
                 {/* Stats overlay */}
                 <div className="absolute top-4 right-4 bg-background/80 backdrop-blur-sm px-3 py-1 rounded-full border flex items-center">
                   <div className="w-2 h-2 rounded-full bg-blue-500 mr-2"></div>
-                  <span className="text-sm font-medium">15,473 Indexed</span>
+                  <span className="text-sm font-medium">5,473 MCP Servers Indexed</span>
                 </div>
               </div>
             </div>

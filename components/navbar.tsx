@@ -49,13 +49,13 @@ export default function Navbar() {
         {/* Desktop menu */}
         <div className="hidden md:flex items-center gap-6">
           <Link href="#why" className="hover:text-primary transition-colors">
-            Why
+            Why MCP Hub
           </Link>
           <Link href="#who" className="hover:text-primary transition-colors">
-            Who
+            Who is it for
           </Link>
           <Link href="#how" className="hover:text-primary transition-colors">
-            How
+            How it works
           </Link>
           {/* <Link href="#register" className="hover:text-primary transition-colors">
             Register

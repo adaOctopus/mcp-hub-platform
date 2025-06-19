@@ -6,9 +6,9 @@ export default function WhyUseSection() {
     <section id="why" className="py-16 md:py-24 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-4 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold" style={{letterSpacing: '-1px'}}> <span className="gradient-text" >MCP Hub</span> Revolutionaizes Everything</h2>
+          <h2 className="text-3xl md:text-4xl font-bold" style={{letterSpacing: '-1px'}}> <span className="gradient-text" >MCP Hub</span> Revolutionizes Everything</h2>
           <p className="text-xl text-muted-foreground max-w-2xl">
-            The Model Context Protocol is revolutionizing how AI agents interact with external tools and data sources
+            MCP Servers can finally be used by everyone, effortlessly.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function WhyUseSection() {
             </CardHeader>
             <CardContent>
               <CardDescription>
-                Built-in infrastructure for developers to monetize their MCP servers and specialized tools.
+                Combine MCP servers with AI superpowers to create new monetization opportunities.
               </CardDescription>
             </CardContent>
           </Card>
