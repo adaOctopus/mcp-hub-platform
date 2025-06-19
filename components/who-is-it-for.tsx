@@ -14,7 +14,7 @@ export default function WhoIsItFor() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16">
         <div className="rounded-xl border bg-card p-6 md:p-8 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full -mr-16 -mt-16"></div>
-            <h3 className="text-2xl font-bold mb-4">AI Entrepreneurs</h3>
+            <h3 className="text-2xl font-bold mb-4"  style={{letterSpacing: '-1px'}}>AI Entrepreneurs</h3>
             <p className="text-muted-foreground mb-6">
               Discover and integrate powerful capabilities into your AI products without complex development
             </p>
@@ -35,7 +35,7 @@ export default function WhoIsItFor() {
           </div>
           <div className="rounded-xl border bg-card p-6 md:p-8 relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full -mr-16 -mt-16"></div>
-            <h3 className="text-2xl font-bold mb-4" >MCP Server Developers</h3>
+            <h3 className="text-2xl font-bold mb-4" style={{letterSpacing: '-1px'}}>MCP Server Developers</h3>
             <p className="text-muted-foreground mb-6">
               Create and monetize specialized tools, data connectors, and services that extend AI capabilities
             </p>

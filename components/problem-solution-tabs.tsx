@@ -620,9 +620,9 @@ export default function ProblemSolutionTabs() {
     <section className="py-16 md:py-24 bg-muted/30">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center text-center space-y-4 mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">Problems We Solve</h2>
+          <h2 className="text-3xl md:text-4xl font-bold" style={{letterSpacing: '-1px'}}><span className="gradient-text" >AI Agents & MCP</span> Integration Made Easy</h2>
           <p className="text-xl text-muted-foreground max-w-2xl">
-            MCP Hub addresses key challenges for both AI entrepreneurs and MCP server owners
+            We solve key problems for AI entrepreneurs and MCP server owners.
           </p>
         </div>
 

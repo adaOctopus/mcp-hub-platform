@@ -13,8 +13,8 @@ export default function Hero() {
             <h1 className="text-4xl md:text-6xl font-bold tracking-tighter" >
               <span className="gradient-text" >World's best</span> platform for building AI empires.
             </h1>
-            <p className="text-xl text-muted-foreground">
-            Instantly connect your apps to any AI Agent via MCP servers. No code needed. 
+            <p className="text-xl text-muted-foreground" style={{letterSpacing: '-1px'}}>
+            Instantly connect your apps to any AI Agent via MCP servers. With zero code. 
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
