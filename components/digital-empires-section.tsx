@@ -275,7 +275,7 @@ export default function DigitalEmpiresSection() {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold mb-6" style={{ letterSpacing: '-2px' }}>
-            This is where <span className="gradient-text">digital empires</span> are built
+            This is where <span className="gradient-text">AI empires</span> are built
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Meet the entrepreneurs who used MCP Servers and AI agents to build their own digital empires.

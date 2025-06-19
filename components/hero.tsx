@@ -11,10 +11,10 @@ export default function Hero() {
               <span className="text-primary font-medium">Model Context Protocol</span>
             </div> */}
             <h1 className="text-4xl md:text-6xl font-bold tracking-tighter" >
-              <span className="gradient-text" >Supercharge</span> your apps with AI Agents.
+              <span className="gradient-text" >World's best</span> platform for building AI empires.
             </h1>
             <p className="text-xl text-muted-foreground">
-            Instantly connect your apps to any AI Agent. The easiest way to add AI to your apps & monetize MCP servers without writing any code. 
+            Instantly connect your apps to any AI Agent via MCP servers. No code needed. 
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
